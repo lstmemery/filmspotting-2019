@@ -1,0 +1,17 @@
+player_1_name,player_2_name,plus_minus,predicted,correct
+Taxi Driver,Casablanca,-6,5.1444297,-1.0
+Pulp Fiction,Fargo,-8,35.373383,-1.0
+Apocalypse Now,The Empire Strikes Back,-6,21.843401,-1.0
+Pulp Fiction,Fight Club,44,-2.3025606,-1.0
+Pulp Fiction,The Silence of the Lambs,32,-5.899734,-1.0
+Miller's Crossing,Jurassic Park,-36,18.396366,-1.0
+Boogie Nights,The Big Lebowski,-12,8.089157,-1.0
+Chungking Express,Jackie Brown,-20,32.100365,-1.0
+The Shining,Eternal Sunshine of the Spotless Mind,-2,17.161896,-1.0
+The Godfather: Part II,Pulp Fiction,-6,25.444742,-1.0
+Magnolia,Being John Malkovich,-8,5.113299,-1.0
+Unforgiven,The Matrix,-14,2.1350698,-1.0
+Rushmore,Se7en,4,-8.560373,-1.0
+Grave of the Fireflies,Rio Bravo,-4,43.392235,-1.0
+Heat,Dazed and Confused,-6,29.309303,-1.0
+Vertigo,Eternal Sunshine of the Spotless Mind,6,-16.102955,-1.0

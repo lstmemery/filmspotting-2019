@@ -1,0 +1,102 @@
+player_1_name,player_2_name,plus_minus,predicted,correct
+Annie Hall,The Wizard Of Oz,6,20.198914,1.0
+Fight Club,Jackie Brown,14,17.22355,1.0
+Goodfellas,There's Something About Mary,76,71.645645,1.0
+The Apartment,Glengarry Glen Ross,30,67.022964,1.0
+Dazed and Confused,The Player,44,49.22241,1.0
+Taxi Driver,Casablanca,-6,5.1444297,-1.0
+Vertigo,Annie Hall,32,1.473949,1.0
+The Godfather,Young Frankenstein / Blazing Saddles,58,63.995167,1.0
+The Matrix,The Blair Witch Project,68,68.45979,1.0
+Unforgiven,Trainspotting,22,9.39152,1.0
+Pulp Fiction,Toy Story,32,40.474586,1.0
+Before Sunrise,Eyes Wide Shut,30,4.327078,1.0
+Pulp Fiction,Fargo,-8,35.373383,-1.0
+Se7en,Starship Troopers,52,11.921164,1.0
+Fargo,Before Sunrise,44,18.703934,1.0
+Apocalypse Now,The Empire Strikes Back,-6,21.843401,-1.0
+The Shawshank Redemption,The Usual Suspects,24,20.178701,1.0
+Pulp Fiction,Cool Hand Luke,66,66.60675,1.0
+L. A. Confidential,Glengarry Glen Ross,28,35.787685,1.0
+Citizen Kane,Jaws,8,45.43987,1.0
+2001: A Space Odyssey,The Empire Strikes Back,14,3.7585344,1.0
+Boogie Nights,Naked,80,60.175797,1.0
+The Silence of the Lambs,Close-Up,72,84.2092,1.0
+Star Wars,The Breakfast Club,68,54.197758,1.0
+Fight Club,Safe,66,72.28352,1.0
+Goodfellas,Out of Sight,66,69.366104,1.0
+Alien,The Tree of Life,36,56.857185,1.0
+Reservoir Dogs,Boyz N the Hood,54,62.191917,1.0
+The Empire Strikes Back,Vertigo,10,12.214859,1.0
+Raging Bull,Back to the Future,-16,-10.483119,1.0
+Pulp Fiction,Saving Private Ryan,64,35.429836,1.0
+Rushmore,The Sweet Hereafter,68,49.68234,1.0
+Back to the Future,Groundhog Day,16,50.55067,1.0
+Reservoir Dogs,The Master,22,27.26231,1.0
+Unforgiven,Metropolitan,72,67.06447,1.0
+Being John Malkovich,Office Space,18,42.260235,1.0
+Pulp Fiction,Fight Club,44,-2.3025606,-1.0
+Barton Fink,Leon: The Professional,22,5.290757,1.0
+Jackie Brown,Princess Mononoke,14,10.39886,1.0
+Goodfellas,The Matrix,22,3.7355328,1.0
+Pulp Fiction,The Silence of the Lambs,32,-5.899734,-1.0
+Before Sunrise,The Insider,44,58.432175,1.0
+All The President's Men,Pather Panchali,44,24.155117,1.0
+Apocalypse Now,The Evil Dead,68,72.47785,1.0
+Pulp Fiction,Wild at Heart,74,76.799774,1.0
+Goodfellas,Jurassic Park,32,45.50024,1.0
+Boogie Nights,Malcolm X,48,30.455935,1.0
+Eyes Wide Shut,The Piano,34,42.687473,1.0
+Miller's Crossing,Jurassic Park,-36,18.396366,-1.0
+Boogie Nights,The Big Lebowski,-12,8.089157,-1.0
+Before Sunrise,Before Sunset,14,29.110666,1.0
+The Big Lebowski,Groundhog Day,4,15.126919,1.0
+2001: A Space Odyssey,To Kill A Mockingbird,60,75.154175,1.0
+Rushmore,The Shawshank Redemption,6,17.658007,1.0
+Do The Right Thing,Dog Day Afternoon,40,17.140081,1.0
+Goodfellas,Reservoir Dogs,32,28.374893,1.0
+Groundhog Day,Edward Scissorhands,52,28.157507,1.0
+One Flew Over the Cuckoo's Nest,Close Encounters of the Third Kind,20,50.059464,1.0
+Chungking Express,Jackie Brown,-20,32.100365,-1.0
+Chinatown,Raiders of the Lost Ark,-10,-6.6823044,1.0
+The Silence of the Lambs,Terminator 2: Judgment Day,34,47.450775,1.0
+Malcolm X,Blue,18,25.751936,1.0
+Fargo,L. A. Confidential,60,32.14634,1.0
+Vertigo,Say Anything...,68,80.35824,1.0
+Blue Velvet,The Red Shoes,28,38.7034,1.0
+The Shining,Eternal Sunshine of the Spotless Mind,-2,17.161896,-1.0
+The Shining,Dead Poets Society,62,63.083195,1.0
+Mulholland Dr.,The Royal Tenebaums,4,28.570152,1.0
+The Godfather,2001: A Space Odyssey,12,24.77359,1.0
+Casablanca,Edward Scissorhands,64,62.10164,1.0
+The Silence of the Lambs,Dazed and Confused,32,22.167576,1.0
+Singin' in the Rain,Au Hasard Balthazar,76,28.704426,1.0
+The Godfather: Part II,Pulp Fiction,-6,25.444742,-1.0
+Taxi Driver,Midnight Run,74,60.31154,1.0
+Heat,JFK,44,58.65057,1.0
+Magnolia,Being John Malkovich,-8,5.113299,-1.0
+Casablanca,Blue Velvet,44,3.8751519,1.0
+Pulp Fiction,Rio Bravo,66,34.216484,1.0
+The Matrix,Hoop Dreams,36,23.924578,1.0
+The Empire Strikes Back,A Nightmare on Elm Street,80,63.155365,1.0
+Unforgiven,The Matrix,-14,2.1350698,-1.0
+The Godfather: Part II,Star Wars,6,13.928118,1.0
+The Godfather,Alien,30,12.888022,1.0
+Rushmore,Se7en,4,-8.560373,-1.0
+Fight Club,Barton Fink,14,34.050247,1.0
+Grave of the Fireflies,Rio Bravo,-4,43.392235,-1.0
+Chinatown,Batman,62,56.231567,1.0
+Citizen Kane,2001: A Space Odyssey,-6,-13.83169,1.0
+Jaws,Die Hard,24,14.914676,1.0
+Goodfellas,Being John Malkovich,40,21.3556,1.0
+Apocalypse Now,All The President's Men,42,27.478704,1.0
+Heat,Dazed and Confused,-6,29.309303,-1.0
+Citizen Kane,Born on the Fourth of July,86,51.87663,1.0
+Toy Story,Schindler's List,20,10.079617,1.0
+The Big Lebowski,Unforgiven,40,20.268473,1.0
+Vertigo,Eternal Sunshine of the Spotless Mind,6,-16.102955,-1.0
+The Godfather,Casablanca,18,8.319082,1.0
+The Godfather,Before Sunrise,52,43.073803,1.0
+The Empire Strikes Back,Singin' in the Rain,12,26.811344,1.0
+Hoop Dreams,The Thin Red Line,12,33.879704,1.0
+Trainspotting,Clueless,16,31.658092,1.0

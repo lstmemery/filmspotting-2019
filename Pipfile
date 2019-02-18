@@ -8,6 +8,10 @@ jupyterlab = "*"
 pandas = "*"
 "pymc3" = "*"
 "beautifulsoup4" = "*"
+scikit-learn = "*"
+xgboost = "*"
+imdbpy = {git = "https://github.com/alberanid/imdbpy"}
+"eli5" = "*"
 
 [dev-packages]
 
