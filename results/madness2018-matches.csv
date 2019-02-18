@@ -1,0 +1,64 @@
+player_1_name,player_1_seed,player_2_name,player_2_seed,match.scores_csv
+Pulp Fiction,1,Wild at Heart,64,87-13
+Pulp Fiction,1,Saving Private Ryan,33,82-18
+Out of Sight,32,Saving Private Ryan,33,41-59
+Pulp Fiction,1,Toy Story,16,66-34
+Pulp Fiction,1,Fight Club,8,72-28
+Pulp Fiction,1,The Silence of the Lambs,4,66-34
+Pulp Fiction,1,Fargo,3,46-54
+Goodfellas,2,Fargo,3,45-55
+Toy Story,16,The Sixth Sense,49,75-25
+Toy Story,16,Schindler's List,17,60-40
+Schindler's List,17,The Iron Giant,48,66-34
+Fight Club,8,Safe,57,83-17
+Fight Club,8,Barton Fink,25,57-43
+Fight Club,8,Jackie Brown,24,57-43
+Chungking Express,9,Jackie Brown,24,40-60
+Barton Fink,25,Leon: The Professional,40,61-39
+Chungking Express,9,My Own Private Idaho,56,58-42
+Jackie Brown,24,Princess Mononoke,41,57-43
+The Silence of the Lambs,4,Close-Up,61,86-14
+The Silence of the Lambs,4,Terminator 2: Judgment Day,29,67-33
+The Silence of the Lambs,4,Dazed and Confused,20,66-34
+Heat,13,Dazed and Confused,20,47-53
+The Silence of the Lambs,4,The Big Lebowski,12,55-45
+Boogie Nights,5,The Big Lebowski,12,44-56
+Terminator 2: Judgment Day,29,The Lion King,36,61-39
+Heat,13,JFK,52,72-28
+Dazed and Confused,20,The Player,45,72-28
+Boogie Nights,5,Naked,60,90-10
+Boogie Nights,5,Malcolm X,28,74-26
+Malcolm X,28,Blue,37,59-41
+The Big Lebowski,12,The Truman Show,53,70-30
+The Big Lebowski,12,Groundhog Day,21,52-48
+Groundhog Day,21,Edward Scissorhands,44,76-24
+Goodfellas,2,There's Something About Mary,63,88-12
+Goodfellas,2,Jurassic Park,34,66-34
+Miller's Crossing,31,Jurassic Park,34,32-68
+Goodfellas,2,Being John Malkovich,18,70-30
+Magnolia,15,Being John Malkovich,18,46-54
+Goodfellas,2,The Matrix,10,61-39
+Unforgiven,7,The Matrix,10,43-57
+Magnolia,15,All About My Mother,50,79-21
+Being John Malkovich,18,Office Space,47,59-41
+Unforgiven,7,Metropolitan,58,86-14
+Unforgiven,7,Trainspotting,26,61-39
+Trainspotting,26,Clueless,39,58-42
+The Matrix,10,The Blair Witch Project,55,84-16
+The Matrix,10,Hoop Dreams,23,68-32
+Hoop Dreams,23,The Thin Red Line,42,56-44
+Fargo,3,Dead Man,62,91-9
+Fargo,3,L. A. Confidential,30,80-20
+Fargo,3,Before Sunrise,14,72-28
+Fargo,3,Rushmore,6,72-28
+L. A. Confidential,30,Glengarry Glen Ross,35,64-36
+Before Sunrise,14,The Insider,51,72-28
+Before Sunrise,14,Eyes Wide Shut,19,65-35
+Eyes Wide Shut,19,The Piano,46,67-33
+Rushmore,6,The Sweet Hereafter,59,84-16
+Rushmore,6,The Shawshank Redemption,27,53-47
+Rushmore,6,Se7en,22,52-48
+Reservoir Dogs,11,Se7en,22,50-50
+The Shawshank Redemption,27,The Usual Suspects,38,62-38
+Reservoir Dogs,11,Boyz N the Hood,54,77-23
+Se7en,22,Starship Troopers,43,76-24
