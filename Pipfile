@@ -8,6 +8,7 @@ jupyterlab = "*"
 pandas = "*"
 "pymc3" = "*"
 "beautifulsoup4" = "*"
+notebook = "*"
 
 [dev-packages]
 
