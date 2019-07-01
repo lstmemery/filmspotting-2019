@@ -15,8 +15,7 @@ imdbpy = {git = "https://github.com/alberanid/imdbpy"}
 auto-sklearn = "*"
 tpot = "*"
 parso = "*"
-
-[dev-packages]
+notebook = "*"
 
 [requires]
 python_version = "3.6"
