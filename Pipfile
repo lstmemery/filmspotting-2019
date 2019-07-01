@@ -12,6 +12,9 @@ scikit-learn = "*"
 xgboost = "*"
 imdbpy = {git = "https://github.com/alberanid/imdbpy"}
 "eli5" = "*"
+auto-sklearn = "*"
+tpot = "*"
+parso = "*"
 
 [dev-packages]
 
