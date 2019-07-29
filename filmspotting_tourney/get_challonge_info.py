@@ -6,22 +6,27 @@ import requests
 from dotenv import load_dotenv
 
 
-def get_api_key():
+def get_api_key() -> str:
+    """Retrieve the Challonge API key."""
     load_dotenv()
-    return os.getenv("CHALLONGE_API")
+    return os.getenv('CHALLONGE_API')
 
 
-def get_challonge_api_info(tournament, api_key):
-    return requests.get(f"https://api.challonge.com/v1/tournaments/{tournament}.json",
-                        params={'api_key': api_key,
-                                'include_participants': 1,
-                                'include_matches': 1
-                                })
+def get_challonge_api_info(tournament: str, api_key: str) -> requests.Response:
+    """Retrieve all JSON tournament information from Challonge."""
+    return requests.get(
+        f'https://api.challonge.com/v1/tournaments/{tournament}.json',
+        params={
+            'api_key': api_key,
+            'include_participants': 1,
+            'include_matches': 1,
+        },
+    )
 
 
 if __name__ == '__main__':
     api_key = get_api_key()
-    results = get_challonge_api_info('madness19', api_key)
+    challonge_response = get_challonge_api_info('madness19', api_key)
 
-    with open(Path("../data/madness19-post.json"), 'w+') as file_path:
-        json.dump(results.json(), file_path, indent=2)
+    with open(Path('../data/madness19-post.json'), 'w+') as file_path:
+        json.dump(challonge_response.json(), file_path, indent=2)
