@@ -3,3 +3,22 @@ repos:
     rev: 3.7.4
     hooks:
     -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+    -   id: pretty-format-json
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+    -   id: double-quote-string-fixer
+    -   id: end-of-file-fixer
+    -   id: mixed-line-ending
+    -   id: name-tests-test
+        args: [--django]
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
