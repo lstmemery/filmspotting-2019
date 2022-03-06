@@ -16,6 +16,8 @@ auto-sklearn = "*"
 tpot = "*"
 parso = "*"
 notebook = "*"
+python-dotenv = "*"
+pychallonge = "*"
 
 [requires]
 python_version = "3.8"
