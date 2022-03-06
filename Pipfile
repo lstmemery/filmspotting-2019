@@ -18,6 +18,7 @@ parso = "*"
 notebook = "*"
 python-dotenv = "*"
 pychallonge = "*"
+scrapy = "*"
 
 [requires]
 python_version = "3.8"
