@@ -19,11 +19,11 @@ def translate_names(match: str, name_dict: Dict) -> Tuple:
 
 
 if __name__ == '__main__':
-    with open('/home/deadhand/Documents/filmspotting-2019/data/tourney2022.json', 'r') as film_names_file:
+    with open('/home/deadhand/Documents/filmspotting-2019/data/tourney2023.json', 'r') as film_names_file:
         film_names = json.load(film_names_file)
         film_name_dict = parse_names(film_names)
 
-    with open('/home/deadhand/Documents/filmspotting-2019/results/2022_predictions.csv', 'r') as file:
+    with open('/home/deadhand/Documents/filmspotting-2019/results/2023_predictions.csv', 'r') as file:
         predictions = {}
         for i in file.readlines()[1:]:
             match, position, winner = translate_names(i, film_name_dict)
