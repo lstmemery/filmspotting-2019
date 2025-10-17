@@ -31,7 +31,7 @@ async def get_predictions(loop):
     api_key = get_api_key()
     challonge.set_credentials('lstmemery', api_key)
 
-    tourney = await challonge.tournaments.show('madness2022', **{            'include_participants': 1,
+    tourney = await challonge.tournaments.show('madness2025', **{            'include_participants': 1,
             'include_matches': 1,
             'include_predictions': 1})
     print('Done')
@@ -42,7 +42,7 @@ def get_predictions_thread():
     api_key = get_api_key()
     challonge.set_credentials('lstmemery', api_key)
 
-    return challonge.tournaments.show('madness2022', **{'include_participants': 1,
+    return challonge.tournaments.show('madness2025', **{'include_participants': 1,
             'include_matches': 1,
             'include_predictions': 1})
 

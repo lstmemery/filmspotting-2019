@@ -27,7 +27,7 @@ def get_challonge_api_info(tournament: str, api_key: str) -> requests.Response:
 if __name__ == '__main__':
     load_dotenv()
     api_key = get_api_key()
-    challonge_response = get_challonge_api_info('madness2022', api_key)
+    challonge_response = get_challonge_api_info('14453024', api_key)
 
-    with open(Path('../../data/madness2022.json'), 'w+') as file_path:
+    with open(Path('../../data/madness2025.json'), 'w+') as file_path:
         json.dump(challonge_response.json(), file_path, indent=2)

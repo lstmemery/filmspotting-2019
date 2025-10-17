@@ -16,16 +16,35 @@ class ChallongeScraper:
         print("Starting scraper...")
         async with async_playwright() as p:
             print("Launching browser...")
-            browser = await p.chromium.launch(headless=True)
+            browser = await p.chromium.launch(
+                headless=False,  # Keep browser visible
+                args=[
+                    '--disable-blink-features=AutomationControlled',
+                    '--disable-features=IsolateOrigins,site-per-process',
+                ]
+            )
             context = await browser.new_context(
                 user_agent=self.user_agents[0],
-                viewport={'width': 1920, 'height': 1080}
+                viewport={'width': 1920, 'height': 1080},
+                # Add browser fingerprinting evasion
+                java_script_enabled=True,
+                has_touch=True,
+                locale='en-US',
+                timezone_id='America/New_York',
+                permissions=['geolocation']
             )
+
+            # Modify JavaScript detection
+            await context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                });
+            """)
 
             page = await context.new_page()
             results = []
 
-            for page_num in range(1, 4):
+            for page_num in range(3, 4):
                 print(f"\nProcessing page {page_num}")
                 url = f"https://challonge.com/madness2025/predictions?page={page_num}"
                 print(f"Navigating to: {url}")
@@ -33,52 +52,41 @@ class ChallongeScraper:
                 await page.wait_for_load_state('networkidle')
                 await asyncio.sleep(uniform(1, 3))
 
-                print("Looking for prediction links...")
-                prediction_links = await page.eval_on_selector_all(
-                    'a[href*="tournaments/14453024/predictions"]',
+                # Replace the prediction_links section with this:
+                print("Looking for Final Four predictions...")
+                final_four_predictions = await page.eval_on_selector_all(
+                    '.final_four span',
                     '''elements => elements
-                        .map(el => el.href)
-                        .filter(href => /\/predictions\/\d{7}$/.test(href))'''
+                        .map(el => el.textContent.trim())
+                        .filter(text => text.length > 0)'''
                 )
-                print(f"Found {len(prediction_links)} prediction links")
+                print(f"Found {len(final_four_predictions)} Final Four entries")
+                results.extend(final_four_predictions)
 
-                for i, link in enumerate(prediction_links, 1):
-                    print(f"\nProcessing link {i}/{len(prediction_links)}: {link}")
-                    await page.goto(link)
-
-                    try:
-                        print("Waiting for PredictionController...")
-                        await page.wait_for_selector('[data-react-class="PredictionController"]')
-
-                        print("Extracting predictions...")
-                        predictions = await page.evaluate('''() => {
-                            const el = document.querySelector('[data-react-class="PredictionController"]');
-                            return el ? el.getAttribute('data-react-props') : null;
-                        }''')
-
-                        if predictions:
-                            matches = re.findall(r'\d{9},\d,\d{9}', predictions)
-                            print(f"Found {len(matches)} matches")
-                            results.extend(matches)
-                        else:
-                            print("No predictions found in data-react-props")
-
-                        # Debug page content if no matches found
-                        if not matches:
-                            print("Page HTML snippet:")
-                            content = await page.content()
-                            print(content[:500] + "...")
-
-                    except TimeoutError:
-                        print("Timeout waiting for PredictionController")
-                        print("Current URL:", await page.url())
-                        print("Page title:", await page.title())
-
-                    await asyncio.sleep(uniform(1, 3))
+                # Later, when writing results:
+                output_path = Path.home() / 'Documents/filmspotting-2019/results/2025_final_four_3.txt'
+                print(f"Writing results to {output_path}")
+                with open(output_path, 'w') as f:
+                    for prediction in results:
+                        f.write(f"{prediction}\n")
 
             print(f"\nScraping complete. Found {len(results)} total matches")
             await browser.close()
             return results
+
+async def navigate_with_retry(page, link, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            print(f"Navigation attempt {attempt + 1}/{max_retries}")
+            await page.goto(link, timeout=60000)  # 60 second timeout
+            await page.wait_for_load_state('load')  # Wait for initial load only
+            return True
+        except TimeoutError as e:
+            print(f"Timeout on attempt {attempt + 1}: {str(e)}")
+            if attempt == max_retries - 1:
+                print("Max retries reached, skipping link")
+                return False
+            await asyncio.sleep(5)  # Wait before retry
 
 
 async def main():

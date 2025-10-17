@@ -31,7 +31,7 @@ async def get_predictions(loop):
     api_key = get_api_key()
     user = await challonge.get_user('lstmemery', api_key)
 
-    tourney = await user.get_tournament(url='madness2021')
+    tourney = await user.get_tournament(url='madness2025')
     print('Done')
 
 
