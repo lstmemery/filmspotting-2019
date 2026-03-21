@@ -1,0 +1,25 @@
+[project]
+name = "filmspotting-tourney"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "jupyterlab",
+    "pandas",
+    "numpy>=1.20,<1.24",
+    "pymc3",
+    "beautifulsoup4",
+    "scikit-learn",
+    "xgboost",
+    "cinemagoer",
+    "eli5",
+    "auto-sklearn",
+    "tpot",
+    "parso",
+    "notebook",
+    "python-dotenv",
+    "pychallonge>=1.11",
+    "scrapy",
+]
+
+[tool.uv]
+package = false
